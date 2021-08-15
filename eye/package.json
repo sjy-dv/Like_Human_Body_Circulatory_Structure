@@ -1,0 +1,25 @@
+{
+    "name": "eye_process",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node app.js -V -e js",
+        "deploy-start": "pm2-runtime start ecosystem.config.js",
+        "stop": "pm2 kill"
+    },
+    "dependencies": {
+        "@babel/core": "^7.13.1",
+        "@babel/node": "^7.13.0",
+        "@babel/preset-env": "^7.13.5",
+        "axios": "^0.21.1",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
+        "morgan": "^1.10.0",
+        "pm2": "^5.1.0",
+        "redis": "^3.1.2",
+        "socket.io": "^4.1.3",
+        "socket.io-redis": "^6.1.1"
+    }
+}
